@@ -12,4 +12,4 @@ ynbr
 License
 -------
 
-3-clause BSD license, see the "LICENSE.txt" file for details.
+2-clause BSD license, see the "LICENSE.txt" file for details.
