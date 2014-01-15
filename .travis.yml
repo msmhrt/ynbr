@@ -12,9 +12,9 @@ before_install:
     - "pip --version"
     - "easy_install --version"
 install: "pip install -r test-requirements.txt"
-before_script:
-    - "pip freeze -r test-requirements.txt"
-    - "coverage erase"
+before_script: "pip freeze -r test-requirements.txt"
 script: "coverage run --source=ynbr -m unittest"
-after_success: "coveralls"
+after_success:
+    - "coverage report"
+    - "coveralls"
 
